@@ -949,6 +949,10 @@ video {
   height: 2.5rem;
 }
 
+.h-16{
+  height: 4rem;
+}
+
 .h-24{
   height: 6rem;
 }
@@ -977,8 +981,16 @@ video {
   height: 2.25rem;
 }
 
+.h-\[calc\(100\%-110px\)\]{
+  height: calc(100% - 110px);
+}
+
 .h-\[calc\(100\%-60px\)\]{
   height: calc(100% - 60px);
+}
+
+.h-\[calc\(100\%-70px\)\]{
+  height: calc(100% - 70px);
 }
 
 .h-full{
@@ -1004,6 +1016,10 @@ video {
 
 .w-10{
   width: 2.5rem;
+}
+
+.w-16{
+  width: 4rem;
 }
 
 .w-24{
@@ -3338,8 +3354,16 @@ video {
     height: 3rem;
   }
 
+  .md\:h-24{
+    height: 6rem;
+  }
+
   .md\:h-\[calc\(100\%-50px\)\]{
     height: calc(100% - 50px);
+  }
+
+  .md\:h-\[calc\(100\%-75px\)\]{
+    height: calc(100% - 75px);
   }
 
   .md\:min-h-\[calc\(100vh\+110px\)\]{
@@ -3352,6 +3376,10 @@ video {
 
   .md\:w-12{
     width: 3rem;
+  }
+
+  .md\:w-24{
+    width: 6rem;
   }
 
   .md\:w-3\/5{
@@ -3398,6 +3426,21 @@ video {
 
   .md\:gap-8{
     gap: 2rem;
+  }
+
+  .md\:gap-x-12{
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+  }
+
+  .md\:gap-x-24{
+    -moz-column-gap: 6rem;
+         column-gap: 6rem;
+  }
+
+  .md\:gap-x-20{
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
   }
 
   .md\:space-x-0 > :not([hidden]) ~ :not([hidden]){
@@ -3514,12 +3557,12 @@ video {
     margin-left: -3.5rem;
   }
 
-  .lg\:-mt-28{
-    margin-top: -7rem;
-  }
-
   .lg\:-mt-36{
     margin-top: -9rem;
+  }
+
+  .lg\:-mt-60{
+    margin-top: -15rem;
   }
 
   .lg\:-mt-8{
@@ -3542,8 +3585,28 @@ video {
     margin-top: 6rem;
   }
 
+  .lg\:ml-9{
+    margin-left: 2.25rem;
+  }
+
+  .lg\:block{
+    display: block;
+  }
+
+  .lg\:hidden{
+    display: none;
+  }
+
+  .lg\:h-\[calc\(100\%-105px\)\]{
+    height: calc(100% - 105px);
+  }
+
   .lg\:h-\[calc\(100\%-40px\)\]{
     height: calc(100% - 40px);
+  }
+
+  .lg\:h-\[calc\(100\%-50px\)\]{
+    height: calc(100% - 50px);
   }
 
   .lg\:max-h-screen{
@@ -3658,8 +3721,12 @@ video {
 }
 
 @media (min-width: 1280px){
-  .xl\:-mt-48{
-    margin-top: -12rem;
+  .xl\:-mt-60{
+    margin-top: -15rem;
+  }
+
+  .xl\:h-\[calc\(100\%-75px\)\]{
+    height: calc(100% - 75px);
   }
 
   .xl\:text-\[7rem\]{
