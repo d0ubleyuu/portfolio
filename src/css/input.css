@@ -1,6 +1,57 @@
+@import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 @import url("https://fonts.cdnfonts.com/css/brasika-display-trial");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@theme {
+  --color-primary: #334b35;
+  --color-secondary: #fdae16;
+  --color-dark: #000000;
+  --color-light: #f6efe1;
+
+  --font-Brasika: "Brasika Display - Trial", "sans-serif";
+  --font-Montserrat: "Montserrat", "sans-serif";
+}
+
+.line {
+  height: 1.5em;
+  line-height: 2em;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 2rem;
+  right: 0;
+  margin: auto;
+  ul {
+    list-style: none;
+    animation: scroll 6s infinite;
+
+    li {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-2.2em);
+  }
+  40% {
+    transform: translateY(-4.2em);
+  }
+  60% {
+    transform: translateY(-6.2em);
+  }
+  80% {
+    transform: translateY(-8.2em);
+  }
+  100% {
+    transform: translateY(-10.2em);
+  }
+}
