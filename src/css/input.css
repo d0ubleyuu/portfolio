@@ -1,6 +1,20 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
-@import url("https://fonts.cdnfonts.com/css/brasika-display-trial");
+
+@font-face {
+  font-family: "Brasika Display";
+  src: url("../fonts/brasika-display-trial.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 @theme {
   --color-primary: #334b35;
@@ -8,8 +22,8 @@
   --color-dark: #000000;
   --color-light: #f6efe1;
 
-  --font-Brasika: "Brasika Display - Trial", "sans-serif";
-  --font-Montserrat: "Montserrat", "sans-serif";
+  --font-Brasika: "Brasika Display", serif;
+  --font-Montserrat: "Montserrat", serif;
 }
 
 .line {
@@ -21,7 +35,6 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 15rem;
   right: 0;
   margin: auto;
   ul {
